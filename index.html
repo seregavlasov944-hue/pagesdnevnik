@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#12151c" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!--
+      Иконка для домашнего экрана айфона. Именно PNG: значки из манифеста
+      iPhone не читает, а SVG не понимает вовсе — без этой строки на экране
+      оказывается уменьшенный снимок страницы вместо значка.
+    -->
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Дневник" />
+    <!--
+      Шрифт загружается заранее. Без этого первая отрисовка идёт запасным
+      шрифтом, а когда подгружается свой, строки меняют ширину и вёрстка
+      дёргается — заметнее всего в сетке календаря. Имя подставляется при
+      сборке: у каждого оформления свой шрифт.
+    -->
+    <link
+      rel="preload"
+      href="./fonts/manrope-700-cyrillic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/manrope-700-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>Дневник тяжелоатлета</title>
+    <script type="module" crossorigin src="./assets/index-BslFnQ4t.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C3WLxNc9.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
